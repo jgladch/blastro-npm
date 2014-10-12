@@ -1,0 +1,15 @@
+{
+  "name": "blastro",
+  "version": "0.0.0",
+  "description": "RESTful API and Data Viz for Swiss Ephemeris",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Gladchun <jeffgladchun@gmail.com>",
+  "license": "GNU",
+  "dependencies": {
+    "bluebird": "^2.3.5",
+    "swisseph": "^0.4.2"
+  }
+}
