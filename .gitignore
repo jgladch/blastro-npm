@@ -2,5 +2,7 @@
 
 bower_components
 node_modules
+!/node_modules/swisseph
+!/node_modules/swisseph/*
 
 iisnode.yml
