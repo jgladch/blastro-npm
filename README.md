@@ -1,5 +1,7 @@
 # Project Name #
 
+> Open up this file in an editor to see the comment block
+
 <!-- 
 
 There is an approach called "working backwards" that is widely used at Amazon. They work backwards from the customer, rather than starting with an idea for a product and trying to bolt customers onto it. While working backwards can be applied to any specific product decision, using this approach is especially important when developing new products or features.
