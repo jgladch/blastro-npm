@@ -67,18 +67,17 @@ var createChart = function(chartInput) {
 
 var dummy = {
   second: 0,
-  minute: 50,
-  hour: 5,
+  minute: 47,
+  hour: 6,
   day: 14,
   month: 11,
   year: 1987,
-  timezone: -4,
-  longitude: -82,
-  latitude: 42,
-  altitude: 0,
+  timezone: -5,
+  longitude: -84.2,
+  latitude: 42.4,   
+  altitude: 100,
   isVedic: true
 }
 
 createChart(dummy);
-
 
