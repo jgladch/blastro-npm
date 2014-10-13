@@ -1,6 +1,6 @@
-# Project Name #
+# Blastro #
 
-> Open up this file in an editor to see the comment block
+> A RESTful API for generating ephemeris data powered by Express and Node.js
 
 <!-- 
 
@@ -13,30 +13,39 @@ Keep it simple. 3-4 sentences for each heading. Cut out the fat. Don't make it i
 Oh, and I also like to write press-releases in what I call "Oprah-speak" for mainstream consumer products. Imagine you're sitting on Oprah's couch and have just explained the product to her, and then you listen as she explains it to her audience. That's "Oprah-speak", not "Geek-speak".
 
  -->
- 
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Blastro will generate ephemeris data for celestial bodies for any given date and location. This data can be used for astronomical and astrological pursuits.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > Currently, there are only a few ways to obtain ephemeris data online. The products that are available are generally implemented using out-dated technologies and feature poor user experience. Blastro aims to streamline the process of obtaining this data and make it an enjoyable experience for the user.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > Blastro provides an API endpoint to obtain planetary ephemeris data for a given date and location.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > Blastro is going to revolutionize the amateur astronomy and astrology markets. Johannes Kepler will be spinning in his grave.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Hit our API Endpoint at blastro.azurewebsites.com/data with a correctly formatted JSON request. The request should meet the following requirements:
+
+  ><pre><code>
+  var requestData = {
+    second: 0,
+    minute: 47,
+    hour: 6,
+    day: 14,
+    month: 11,
+    year: 1987,
+    timezone: -5,
+    longitude: -84.2,
+    latitude: 42.4,   
+    altitude: 100,
+    isVedic: true
+  }
+</code></pre>
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "Thank god for Blastro. Now I can get my ephemeris data without having to use crappy, outdated, ugly astronomy websites. I don't know what I would do without it."
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
