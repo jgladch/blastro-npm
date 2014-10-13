@@ -28,8 +28,7 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 ## How to Get Started ##
   > Hit our API Endpoint at blastro.azurewebsites.com/data with a correctly formatted JSON request. The request should meet the following requirements:
 
-  ><pre><code>
-  var requestData = {
+  ><pre><code>var requestData = {
     second: 0,
     minute: 47,
     hour: 6,
