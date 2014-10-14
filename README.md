@@ -12,7 +12,7 @@
   > Blastro provides a single-page application and API endpoint to obtain planetary ephemeris data for a given date and location.
 
 ## npm-blastro ##
-  > Blastro uses an NPM module to generate ephemeris data. This module repurposes code originally written by Peter Hayes (1999) and Ole Nielsen (2002). If you would like to use the same module, you can install it by running <pre><code>npm install blastro</code></pre>. The repository for npm-blastro can be found <a href="http://www.github.com/jgladch/npm-blastro">here</a>.
+  > Blastro uses an NPM module to generate ephemeris data. This module repurposes code originally written by Peter Hayes (1999) and Ole Nielsen (2002). If you would like to use the same module, you can install it by running: <pre><code>npm install blastro</code></pre> The repository for npm-blastro can be found <a href="http://www.github.com/jgladch/npm-blastro">here</a>.
 
 ## Quote from You ##
   > Blastro will make it much easier for users to find accurate ephemeris data online. Galileo, Kepler, Sagan, and Einstein would be proud.
