@@ -16,11 +16,6 @@ app.listen(port);
 console.log('Server now listening on port ' + port);
 
 app.post('/', function(req, res){
-  // chartInputs = {};
-  // //Convert string input to integer for charting
-  // for (var key in req.body) {
-  //   chartInputs[key] = +req.body[key];
-  // }
 
   obs = {
     day: 14,
