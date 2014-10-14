@@ -9,7 +9,7 @@
   "author": "Jeff Gladchun <jeffgladchun@gmail.com>",
   "license": "GNU",
   "dependencies": {
-    "blastro": "0.0.1",
+    "blastro": "^0.0.4",
     "body-parser": "^1.9.0",
     "express": "^4.9.7",
     "grunt": "^0.4.5",
