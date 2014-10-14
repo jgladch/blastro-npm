@@ -1,17 +1,31 @@
 body{
   text-align: center;
+  background-image: url('space.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-position: center center;*/
+}
+h1{
+  font-family: 'Righteous', cursive;
+  color: #FFFFFF;
+  font-size: 115px;
+  text-shadow: 0px 0px 25px rgba(255, 255, 255, 1);
+}
+.form-control{
+  background-color: #000000;
 }
 div.inputs{
   display: block;
-  width: 250px;
+  width: 175px;
   margin: 0 auto;
 }
 input{
   margin: 3px 0 0 0;
 }
 label{
+  color: #FFFFFF;
   margin: 3px 0 0 0;
 }
 button{
-  margin: 3px 0 0 0;
+  margin: 10px 0 0 0;
 }
