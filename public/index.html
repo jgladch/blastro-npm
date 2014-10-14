@@ -1,27 +1,33 @@
-<html>
+<html ng-app="blastro">
   <head>
     <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch|Righteous|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="index.js"></script>
   </head>
-  <body>
+  <body ng-controller='ChartController'>
     <h1>blastro</h1>
     <div class="form-group">
-      <form action="/" method="POST">
+      <form> <!-- action="/" method="POST" -->
         <div class="inputs">
           <label for="">Date:</label>
-          <input type="text" class="form-control" name="year" placeholder="Enter year">
-          <input type="text" class="form-control" name="month" placeholder="Enter month">
-          <input type="text" class="form-control" name="day" placeholder="Enter day">
-          <input type="text" class="form-control" name="hours" placeholder="Enter hour">
-          <input type="text" class="form-control" name="minutes" placeholder="Enter minute">
-          <input type="text" class="form-control" name="seconds" placeholder="Enter second">
+          <input type="text" class="form-control" ng-model="year" name="year" placeholder="Enter year">
+          <input type="text" class="form-control" ng-model="month" name="month" placeholder="Enter month">
+          <input type="text" class="form-control" ng-model="day" name="day" placeholder="Enter day">
+          <input type="text" class="form-control" ng-model="hours" name="hours" placeholder="Enter hour">
+          <input type="text" class="form-control" ng-model="minutes" name="minutes" placeholder="Enter minute">
+          <input type="text" class="form-control" ng-model="seconds" name="seconds" placeholder="Enter second">
           <label for="">Location:</label>
-          <input type="text" class="form-control" name="longitude" placeholder="Enter longitude">
-          <input type="text" class="form-control" name="latitude" placeholder="Enter latitude">
-          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>      
+          <input type="text" class="form-control" ng-model="longitude" name="longitude" placeholder="Enter longitude">
+          <input type="text" class="form-control" ng-model="latitude" name="latitude" placeholder="Enter latitude">
+          <button class="btn btn-default" ng-click="genChart()"><span class="glyphicon glyphicon-ok"></span></button>      
         </div>
       </form>
+    </div>
+    <div class="output">
+      {{ year }}
+      {{ month }}
     </div>
   </body>
 </html>
