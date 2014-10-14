@@ -15,6 +15,7 @@ h1{
   background-color: #000000;
 }
 div.inputs{
+  padding-top: 8px;
   display: block;
   width: 175px;
   margin: 0 auto;
@@ -23,9 +24,24 @@ input{
   margin: 3px 0 0 0;
 }
 label{
+  font-size: 17px;
   color: #FFFFFF;
   margin: 3px 0 0 0;
 }
 button{
   margin: 10px 0 0 0;
+}
+table {
+  background-color: rgba(0,0,0,.63);
+}
+.table{
+  font-family: Helvetica;
+  color: #B5B5B5;
+}
+.form-control{
+  background-color: rgba(0, 0, 0, 0.25);
+}
+thead{
+  font-size: 17px;
+  color: #FFFFFF;
 }

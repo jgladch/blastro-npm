@@ -33,8 +33,6 @@ app.controller('ChartController', function($scope, Chart) {
       Chart.genChart(obs)
       .then(function(data){
         $scope.coords = data.data.coords;
-        console.log($scope.coords);
-        // console.log(data);
       })
     };
 
