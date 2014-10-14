@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var make = require('./lib/concat/lib.js');
+var bl = require('blastro');
 
 var app = express();
 
@@ -42,6 +42,6 @@ app.post('/', function(req, res){
 
   console.log(obs);
 
-  res.send(make.returnAllPlanets(obs));
+  res.send(bl.returnAllPlanets(obs));
 
 });
