@@ -11,19 +11,26 @@
     <h1>blastro</h1>
     <div class="row">
       <div class="col-md-2 col-md-offset-2 form-group">
-        <form>
+        <form name="blform">
           <div class="inputs">
             <label for="">Date:</label>
-            <input type="text" class="form-control" ng-model="year" name="year" placeholder="Enter year">
-            <input type="text" class="form-control" ng-model="month" name="month" placeholder="Enter month">
-            <input type="text" class="form-control" ng-model="day" name="day" placeholder="Enter day">
-            <input type="text" class="form-control" ng-model="hours" name="hours" placeholder="Enter hour">
-            <input type="text" class="form-control" ng-model="minutes" name="minutes" placeholder="Enter minute">
-            <input type="text" class="form-control" ng-model="seconds" name="seconds" placeholder="Enter second">
+            <input type="number" class="form-control" ng-model="year" name="year" min="-10000" max="3000">
+            <input type="number" class="form-control" ng-model="month" name="month" min="1" max="12">
+            <input type="number" class="form-control" ng-model="day" name="day" min="1" max="31">
+            <input type="number" class="form-control" ng-model="hours" name="hours" min="0" max="24">
+            <input type="number" class="form-control" ng-model="minutes" name="minutes" min="0" max="60">
+            <input type="number" class="form-control" ng-model="seconds" name="seconds" min="60" max="60">
             <label for="">Location:</label>
             <input type="text" class="form-control" ng-model="longitude" name="longitude" placeholder="Enter longitude">
             <input type="text" class="form-control" ng-model="latitude" name="latitude" placeholder="Enter latitude">
-            <button class="btn btn-default" ng-click="genChart()"><span class="glyphicon glyphicon-ok"></span></button>      
+            <button class="btn btn-default" ng-click="genChart()"><span class="glyphicon glyphicon-ok"></span></button>
+            <div>
+              <div class="error" ng-show="blform.month.$dirty && blform.month.$error.max">Month must be 1-12</div>
+              <div class="error" ng-show="blform.day.$dirty && blform.day.$error.max">Day must be 1-31</div>
+              <div class="error" ng-show="blform.hours.$dirty && blform.hours.$error.max">Hours must be 0-24</div>
+              <div class="error" ng-show="blform.minutes.$dirty && blform.minutes.$error.max">Minutes must be 0-60</div>
+              <div class="error" ng-show="blform.seconds.$dirty && blform.seconds.$error.max">Seconds must be 0-60</div>
+            </div>
           </div>
         </form>
       </div>

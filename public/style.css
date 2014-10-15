@@ -61,3 +61,8 @@ thead{
   font-size: 17px;
   color: #FFFFFF;
 }
+div.error{
+  text-align: center;
+  color: #A8A8A8;
+  margin-top: 10px;
+}
